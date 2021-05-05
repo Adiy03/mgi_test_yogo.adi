@@ -1,0 +1,26 @@
+Apabilsa PT. ABC memiliki berbagai asset maka hal yang perlu dilakukan pertamakali mencatat dan mengklasifikasikan
+asset yang dimiliki oleh PT. ABC ke dalam beberapa KATEGORI ASSET 
+
+Asset yang telah dikategorikan kemudian dirangkum dalam program INVENTORRY SERVICE sesuai dengan KATEGORI masing-masing,
+dari masing-masing KATEGORI diberikan VALUE yang sesuai dengan masing-masing KATEGORI 
+seperti nama, harga, tanggal masuk / penerimaan barang, jumlah, status maintenance dsb
+
+Langkah berikutnya yaitu membuat program ACCOUNT SERVICE yang terdiri dari ACCOUNT ADMIN & ACCOUNT USER,
+account admin diprogram agar supaya bisa mengakses dan memanipulasi (merubah, menambah, megurangi dsb)  data yang ada 
+pada INVENTORRY SERVICE, 
+sedangkan account admin hanya terbatas untuk melihat INVENTORRY SERVICE
+
+Kemudian INVENTORRY SERVICE dan ACCOUNT SERVICE di simpan ke dalam DATA BASE yang berbeda untuk
+mempermudah pengelolaan DATA dan menghindari KONFLIK DATA
+
+Setelah semua SERVICE terupload ke DATA BASE nya masing-masing , langkah selanjutnya membuat program tampilan dan 
+mengintegrasikannya dengan DATA BASE  yang dapat di aksese melalui gawai perangkat mobile(seluler) ataupun melalui website 
+
+
+ACCOUNT DATABASE  < ------ >  ACCOUNT SERVICE     - - - -  Mobile
+                                    |            -
+                                    |           -
+                                  API GATEWAY - -
+                                    |           -
+                                    |            -
+ACCOUNT DATABASE  < ------ >  ACCOUNT SERVICE     - - - -  website
